@@ -18,7 +18,7 @@ export default function Gallery(){
     <dialog id="lightbox" ref={dialog} aria-label="Image viewer" onClick={backdropClose} onClose={()=>setOpened(false)} onKeyDown={e=>{if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1);}}>
       <button className="dialog-close" onClick={()=>dialog.current.close()} aria-label="Close image viewer">×</button>
       <img id="lightbox-image" src={opened?`${base+item.image}.webp`:undefined} alt={opened?item.alt:'Enlarged gallery image'} width={1200} height={900}/>
-      <p id="lightbox-caption">{opened&&`${item.alt} · ${c.imageNotice}`}</p>
+      <p id="lightbox-caption">{opened&&[item.alt,c.imageNotice].filter(Boolean).join(' · ')}</p>
       <div className="form-actions"><button id="lightbox-prev" className="button secondary" onClick={()=>show(current-1)}>← Previous</button><button id="lightbox-next" className="button secondary" onClick={()=>show(current+1)}>Next →</button></div>
     </dialog>
   </>;

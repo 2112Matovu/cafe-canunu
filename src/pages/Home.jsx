@@ -46,7 +46,7 @@ function Hero(){
       <button id="next-slide" aria-label="Next slide" onClick={()=>show(index+1)}>→</button>
       <button id="pause-slide" aria-label={paused?'Play slideshow':'Pause slideshow'} aria-pressed={paused} onClick={()=>setPaused(p=>!p)}>{paused?'Play':'Pause'}</button>
     </div></div>
-    <span className="hero-disclosure">{c.imageMode==='generated'?'Illustrative AI-generated scene':'Cafe Canunu'}</span>
+    {c.imageNotice&&<span className="hero-disclosure">{c.imageMode==='generated'?'Illustrative AI-generated scene':'Cafe Canunu'}</span>}
   </section>;
 }
 
@@ -56,7 +56,7 @@ export default function Home(){
     <Hero/>
     <section className="welcome wrap"><p className="eyebrow">Welcome to Cafe Canunu</p><div className="section-heading"><h2>A little comfort.<br/>A lot to savour.</h2><div><p>For a quick bite, a slow coffee, or time around a table. Explore what’s on the menu and plan your next visit.</p><Link className="text-link" to="/about">Get to know Canunu ↗</Link></div></div>
       <div className="services">{Object.entries(c.services).filter(([,v])=>v).map(([s])=><div key={s}><span aria-hidden="true">{SERVICE_ICONS[s]}</span><h3>{s}</h3></div>)}</div>
-      {c.previewMode&&<p className="small muted">{c.servicesNotice}</p>}
+      {c.servicesNotice&&<p className="small muted">{c.servicesNotice}</p>}
     </section>
     <section className="menu-feature section-tint"><div className="wrap"><div className="section-heading"><div><p className="eyebrow">Find your next favourite</p><h2>Meet the menu.</h2></div><Link className="text-link" to="/menu">Explore the full menu ↗</Link></div><MenuNotice/><div className="dish-grid featured">{m.items.filter(i=>i.featured).slice(0,6).map(i=><DishCard key={i.id} item={i}/>)}</div><p className="small muted">Prices are in Uganda Shillings. Images are serving suggestions only.</p></div></section>
     {c.promotion.enabled&&<section className="promo wrap"><p className="eyebrow">Today’s special</p><h2>{c.promotion.title}</h2><p>{c.promotion.text}</p><Button to="/menu">Explore the menu</Button></section>}

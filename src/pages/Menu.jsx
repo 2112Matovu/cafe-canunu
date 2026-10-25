@@ -23,7 +23,7 @@ export default function Menu(){
       <div className="dish-grid">{shown.map(i=><DishCard key={i.id} item={i}/>)}</div>
       <p id="empty-menu" hidden={shown.length!==0}>No dishes match. Try another search or filter.</p>
       <p className="small">Prices are in Uganda Shillings. Images are serving suggestions only.</p><ImageNotice/>
-      <p className="small">Please tell the restaurant about allergies before ordering. Dietary tags describe sample recipes and do not guarantee an allergen-free kitchen.</p>
+      <p className="small">Please tell the restaurant about allergies before ordering. Dietary tags describe our recipes and do not guarantee an allergen-free kitchen.</p>
     </section>
   </>;
 }

@@ -92,7 +92,7 @@ export default function Layout({page,children}){
   const toggleTheme=()=>setTheme(theme==='dark'?'light':'dark');
   return <>
     <a className="skip" href="#main">Skip to content</a>
-    {c.previewMode&&<div className="preview-bar">{c.previewNotice}</div>}
+    {c.previewNotice&&<div className="preview-bar">{c.previewNotice}</div>}
     <header className="site-header"><div className="nav-wrap">
       <Link to="/" className="brand" aria-label={`${c.name} home`}><Logo/></Link>
       <nav id="site-nav" aria-label="Main navigation"><NavLinks page={page}/></nav>

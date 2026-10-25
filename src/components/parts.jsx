@@ -13,8 +13,8 @@ export const Button=({children,to,href,secondary=false})=>to
   ?<Link className={`button ${secondary?'secondary':''}`} to={to}>{children} <Arrow/></Link>
   :<a className={`button ${secondary?'secondary':''}`} href={href}>{children} <Arrow/></a>;
 export const Intro=({label,title,text})=><section className="page-intro wrap"><p className="eyebrow">{label}</p><h1>{title}</h1><p className="lede">{text}</p></section>;
-export const MenuNotice=()=><p className="notice">{c.menuNotice}</p>;
-export const ImageNotice=()=><p className="small muted">{c.imageNotice}</p>;
+export const MenuNotice=()=>c.menuNotice?<p className="notice">{c.menuNotice}</p>:null;
+export const ImageNotice=()=>c.imageNotice?<p className="small muted">{c.imageNotice}</p>:null;
 export const Lines=({text})=>text.split('\n').flatMap((line,i)=>i?[<br key={'br'+i}/>,line]:[line]);
 
 export function External({label,url}){
@@ -25,7 +25,7 @@ export const Socials=()=><div className="socials">{Object.entries(c.socials).map
 
 export function DishCard({item}){
   const {addItem}=useShop();
-  return <article className="dish"><div className="dish-photo"><Picture slug={item.image} alt={item.alt}/><span className="sample-label">{m.sample?'Sample dish':'Serving suggestion'}</span></div><div className="dish-body"><div className="tags">{item.tags.map(t=><span key={t}>{t}</span>)}</div><h3>{item.name}</h3><p>{item.description}</p><div className="dish-bottom"><strong>{money(item.price)}{m.sample&&<small>Sample price</small>}</strong><button className="add" onClick={()=>addItem(item.id)} aria-label={`Add ${item.name} to order`}><span aria-hidden="true">＋</span> Add</button></div></div></article>;
+  return <article className="dish"><div className="dish-photo"><Picture slug={item.image} alt={item.alt}/>{m.sample&&<span className="sample-label">Sample dish</span>}</div><div className="dish-body"><div className="tags">{item.tags.map(t=><span key={t}>{t}</span>)}</div><h3>{item.name}</h3><p>{item.description}</p><div className="dish-bottom"><strong>{money(item.price)}{m.sample&&<small>Sample price</small>}</strong><button className="add" onClick={()=>addItem(item.id)} aria-label={`Add ${item.name} to order`}><span aria-hidden="true">＋</span> Add</button></div></div></article>;
 }
 
 // Re-evaluated every 30 seconds so the indicator stays current while the page is open.

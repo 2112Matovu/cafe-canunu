@@ -8,11 +8,11 @@
   "siteUrl": "[SITE_URL]",
   "description": "Explore Cafe Canunu in Soroti, Uganda. Browse the menu, prepare an order, request a table and get in touch.",
   "previewMode": true,
-  "previewNotice": "Website preview · Sample menu & prices. Contact details and opening hours await confirmation.",
-  "menuNotice": "Sample menu — every dish and price below is an illustrative placeholder, pending the restaurant’s real menu.",
+  "previewNotice": "",
+  "menuNotice": "",
   "imageMode": "generated",
   "realImageDirectory": "images/real/",
-  "imageNotice": "AI-generated food and cafe scenes; these are not photographs of Cafe Canunu or its actual dishes.",
+  "imageNotice": "",
   "hoursLabel": "[OPENING HOURS]",
   "hours": {
     "0": null,
@@ -31,7 +31,7 @@
     "Catering": false,
     "Events": false
   },
-  "servicesNotice": "Preview services — the owner must confirm availability before launch.",
+  "servicesNotice": "",
   "branches": [
     {
       "name": "Cafe Canunu · Soroti",
