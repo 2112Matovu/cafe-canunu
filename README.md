@@ -22,12 +22,12 @@ Then open http://127.0.0.1:4173. Edits to `config.json`, `menu.json` or the sour
 
 - `config.json`, `menu.json`: business details and menu, exactly as before.
 - `src/`: the React app. `pages/` has one component per page, `components/` the shared header, footer, forms and dialogs, `context.jsx` the cart, toast and message dialog, `lib.js` shared validation and message formatting, `styles.css` the responsive design.
-- `public/`: images, favicon, `_headers`, `_redirects`, plus the generated `sitemap.xml` and `robots.txt`. Photos live in `public/images/`.
+- `public/`: images, favicon, plus the generated `sitemap.xml` and `robots.txt`. Photos live in `public/images/`.
 - `validate.mjs`: build-time checks of config, menu and images.
 - `tests/`: automated tests.
 - `dist/`: the folder to upload to your static host after building.
 
-Page addresses are now clean (`/menu`, `/order`). Old `menu.html`-style links redirect automatically. Your host must serve `index.html` for unknown paths; `public/_redirects` does this on Netlify and Cloudflare Pages.
+Page addresses are now clean (`/menu`, `/order`). Old `menu.html`-style links redirect automatically. Your host must serve `index.html` for unknown paths; `vercel.json` does this on Vercel.
 
 ## Contacts, maps and services
 
@@ -83,7 +83,7 @@ The included `_headers` sets a restrictive content policy on hosts that support 
 
 ## Deploy on Vercel
 
-`vercel.json` already sets the build (`npm run build`, output `dist`), sends every address to `index.html` so `/menu`, `/order` and so on work on refresh and shared links, and applies the security headers. `public/_headers` and `public/_redirects` are only used on Netlify and Cloudflare Pages; Vercel ignores them.
+`vercel.json` already sets the build (`npm run build`, output `dist`), sends every address to `index.html` so `/menu`, `/order` and so on work on refresh and shared links, and applies the security headers. Headers and the rewrite live in `vercel.json` only.
 
 Fastest way, from this folder:
 
