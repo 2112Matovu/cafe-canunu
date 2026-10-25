@@ -1,0 +1,147 @@
+{
+  "name": "Cafe Canunu",
+  "tagline": "Good food. Warm company.",
+  "locationLabel": "Soroti, Uganda",
+  "phone": "[PHONE]",
+  "whatsapp": "[WHATSAPP_NUMBER]",
+  "email": "[EMAIL]",
+  "siteUrl": "[SITE_URL]",
+  "description": "Explore Cafe Canunu in Soroti, Uganda. Browse the menu, prepare an order, request a table and get in touch.",
+  "previewMode": true,
+  "previewNotice": "Website preview · Sample menu & prices. Contact details and opening hours await confirmation.",
+  "menuNotice": "Sample menu — every dish and price below is an illustrative placeholder, pending the restaurant’s real menu.",
+  "imageMode": "generated",
+  "realImageDirectory": "images/real/",
+  "imageNotice": "AI-generated food and cafe scenes; these are not photographs of Cafe Canunu or its actual dishes.",
+  "hoursLabel": "[OPENING HOURS]",
+  "hours": {
+    "0": null,
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null
+  },
+  "timeZone": "Africa/Kampala",
+  "services": {
+    "Dine-in": true,
+    "Takeaway": true,
+    "Delivery": false,
+    "Catering": false,
+    "Events": false
+  },
+  "servicesNotice": "Preview services — the owner must confirm availability before launch.",
+  "branches": [
+    {
+      "name": "Cafe Canunu · Soroti",
+      "address": "Market Lane, on the Mbale–Soroti Road",
+      "note": "We’re on the 3rd floor of the building. Look for the Cafe Canunu sign at street level. The balcony overlooks the street and Soroti Rock.",
+      "mapUrl": "https://maps.google.com/?q=Cafe+Canunu+Soroti+Uganda",
+      "mapEmbedUrl": "https://www.google.com/maps?q=Cafe+Canunu+Soroti+Uganda&output=embed",
+      "latitude": null,
+      "longitude": null
+    }
+  ],
+  "reviewsUrl": "https://www.google.com/search?q=cafe+canunu+soroti&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_yctfpvQ6p4PisovpkqOEqQLf_6sUWrtS851hVB5A8_KDfpSVXgz_t7TC-4u34PPl220gaWb9BN6HrMsGZKKMWeWCwJn",
+  "googleRating": {
+    "score": 3.8,
+    "count": 780
+  },
+  "socials": {
+    "Facebook": "[FACEBOOK_URL]",
+    "Instagram": "[INSTAGRAM_URL]",
+    "TikTok": "[TIKTOK_URL]",
+    "WhatsApp": "[WHATSAPP_URL]"
+  },
+  "payments": {
+    "text": "Pay with Cash, MTN MoMo or Airtel Money",
+    "mtn": "[MTN_MERCHANT_NUMBER]",
+    "airtel": "[AIRTEL_MONEY_NUMBER]",
+    "confirmed": false
+  },
+  "forms": {
+    "endpoint": "[FORM_SERVICE_ENDPOINT]",
+    "newsletterEndpoint": "[NEWSLETTER_ENDPOINT]",
+    "newsletterConsent": "By subscribing I agree to receive news and offers from Cafe Canunu",
+    "confidentiality": "We treat your feedback confidentially. Sending it through WhatsApp, email or a form provider is subject to that provider’s privacy practices."
+  },
+  "promotion": {
+    "enabled": false,
+    "title": "[PROMOTION_TITLE]",
+    "text": "[PROMOTION_DETAILS]"
+  },
+  "about": {
+    "eyebrow": "Our story",
+    "title": "A place at the table.",
+    "story": "[RESTAURANT STORY — replace with the real story of Cafe Canunu, its beginnings and what makes it special.]",
+    "values": "[OUR VALUES — replace with the restaurant’s confirmed approach to food, hospitality and community.]",
+    "team": "[TEAM / CHEF — add a real introduction, with permission, before publishing.]",
+    "confirmed": false
+  },
+  "testimonials": [
+    {
+      "quote": "Best food in town, Quick service, comfortable atmosphere",
+      "name": "Bildad O.",
+      "source": "Google review"
+    },
+    {
+      "quote": "The view at this place is impeccable. … The juice is amazing! Try the one with ginger.",
+      "name": "Jordan B.",
+      "source": "Google review"
+    },
+    {
+      "quote": "A nice place to enjoy the day. You can look on the streets and get a feeling of the city. The waiters are polite and don’t bother you every 5 Minutes like in other locations.",
+      "name": "Judith P.",
+      "source": "Google review"
+    }
+  ],
+  "legal": {
+    "privacy": "[PRIVACY POLICY — owner to replace: identify the business and contact, what data is collected, why, retention periods, local cart storage, consent, third-party WhatsApp/email/maps/form providers, and how customers can exercise their rights.]",
+    "terms": "[TERMS OF USE — owner to replace: confirm menu availability, pricing, order acceptance, reservations, delivery terms, cancellations, refunds, payment methods and contact details. A WhatsApp message is a request until the restaurant confirms it.]"
+  },
+  "features": {
+    "reviews": true,
+    "newsletter": true,
+    "gallery": true,
+    "reservations": true,
+    "darkMode": true,
+    "loyalty": false,
+    "giftCards": false,
+    "cateringEnquiry": false,
+    "careers": false,
+    "languageToggle": false
+  },
+  "optional": {
+    "loyalty": "[LOYALTY DETAILS — information only; accounts and points are phase 2.]",
+    "giftCards": "[GIFT CARD DETAILS — information only; purchases are phase 2.]",
+    "careers": "[CAREERS DETAILS — roles, application instructions and recruitment privacy notice.]"
+  },
+  "languages": {
+    "en": "English"
+  },
+  "hero": [
+    {
+      "image": "hero-plated-meal",
+      "alt": "Illustrative spread of grilled chicken, pilau and matooke on ceramic plates",
+      "label": "Something worth gathering for",
+      "heading": "Good food.\nWarm company.",
+      "text": "Pull up a chair. Explore the tastes, plates and little moments of Cafe Canunu in Soroti."
+    },
+    {
+      "image": "hero-coffee",
+      "alt": "Illustrative coffee, milk tea and passion fruit juice on a wooden table",
+      "label": "Take a little time",
+      "heading": "Your next\ncoffee moment.",
+      "text": "From a comforting cup to a refreshing glass, find something to sip and savour."
+    },
+    {
+      "image": "hero-cafe-table",
+      "alt": "Conceptual cafe table with cream plates, cups and woven placemats",
+      "label": "Make room for connection",
+      "heading": "A table.\nA little togetherness.",
+      "text": "Plan a catch-up, browse the menu or send a request for your next visit."
+    }
+  ],
+  "testimonialsConfirmed": true
+}

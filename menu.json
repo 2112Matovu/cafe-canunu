@@ -1,0 +1,18 @@
+{
+  "sample": true,
+  "categories": [{"id":"breakfast","name":"Breakfast"},{"id":"drinks","name":"Drinks"},{"id":"mains","name":"Mains"},{"id":"desserts","name":"Desserts"}],
+  "items": [
+    {"id":"rolex","category":"breakfast","name":"Rolex egg wrap","description":"Chapati rolled around a colourful egg omelette, with a tomato salad.","price":8000,"image":"rolex-egg-wrap","alt":"Chapati egg wrap sliced to show its omelette filling","tags":["Vegetarian","Popular"],"featured":true},
+    {"id":"breakfast","category":"breakfast","name":"The breakfast plate","description":"Eggs, toast, beans, grilled tomato and sausage for a leisurely start.","price":22000,"image":"breakfast-plate","alt":"Breakfast plate with eggs, toast, beans, sausage and tomato","tags":["Popular"],"featured":false},
+    {"id":"samosas","category":"breakfast","name":"Vegetable samosas","description":"Golden pastry triangles with a savoury vegetable filling and chutney.","price":6000,"image":"samosas","alt":"Three golden vegetable samosas with a small bowl of chutney","tags":["Vegetarian"],"featured":false},
+    {"id":"coffee","category":"drinks","name":"Ugandan coffee","description":"A simple, aromatic cup. Take a moment and make it yours.","price":7000,"image":"ugandan-coffee","alt":"Black coffee in a cream ceramic cup on a saucer","tags":["Vegetarian","Popular"],"featured":true},
+    {"id":"juice","category":"drinks","name":"Passion fruit juice","description":"Bright, tangy passion fruit juice, served chilled.","price":8000,"image":"passion-fruit-juice","alt":"Golden passion fruit juice with cut passion fruit alongside","tags":["Vegetarian","New"],"featured":false},
+    {"id":"tea","category":"drinks","name":"African milk tea","description":"A warm cup of comforting milk tea, with a little time to unwind.","price":6000,"image":"african-tea","alt":"Milk tea in a ceramic cup beside a teapot","tags":["Vegetarian"],"featured":false},
+    {"id":"matooke","category":"mains","name":"Matooke & groundnut","description":"Steamed matooke, creamy groundnut sauce and a side of greens.","price":18000,"image":"matooke-groundnut","alt":"Steamed matooke with groundnut sauce and leafy greens","tags":["Vegetarian","Popular"],"featured":true},
+    {"id":"tilapia","category":"mains","name":"Grilled tilapia & chips","description":"Whole grilled tilapia, golden chips, lemon and a crisp salad.","price":35000,"image":"grilled-tilapia","alt":"Whole grilled tilapia with chips, salad and lemon","tags":["Popular"],"featured":true},
+    {"id":"pilau","category":"mains","name":"Chicken pilau","description":"Fragrant spiced rice with chicken and a fresh tomato salad.","price":25000,"image":"chicken-pilau","alt":"Spiced chicken pilau rice served with tomato salad","tags":["Spicy"],"featured":false},
+    {"id":"cake","category":"desserts","name":"Chocolate cake","description":"A generous slice of chocolate cake with a rich chocolate finish.","price":12000,"image":"chocolate-cake","alt":"Slice of chocolate cake with chocolate frosting on a cream plate","tags":["Vegetarian","Popular"],"featured":false},
+    {"id":"icecream","category":"desserts","name":"Vanilla ice cream","description":"Three creamy scoops. A sweet, simple way to finish.","price":10000,"image":"vanilla-ice-cream","alt":"Three scoops of vanilla ice cream in a ceramic bowl","tags":["Vegetarian"],"featured":false},
+    {"id":"fruit","category":"desserts","name":"Seasonal fruit bowl","description":"A colourful mix of mango, pineapple, watermelon and passion fruit.","price":10000,"image":"fruit-bowl","alt":"Bowl of cut mango, pineapple, watermelon and passion fruit","tags":["Vegetarian","New"],"featured":false}
+  ]
+}

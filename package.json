@@ -1,0 +1,28 @@
+{
+  "name": "cafe-canunu",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node validate.mjs",
+    "dev": "node validate.mjs && vite",
+    "build": "node validate.mjs && vite build",
+    "preview": "vite preview",
+    "start": "npm run build && vite preview --host 127.0.0.1 --port 4173",
+    "test": "node validate.mjs && vitest run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^30.1.3",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
