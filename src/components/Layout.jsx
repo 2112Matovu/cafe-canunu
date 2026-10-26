@@ -89,6 +89,20 @@ export default function Layout({page,children}){
   useLayoutEffect(()=>{document.body.dataset.page=page;},[page]);
   useLayoutEffect(()=>{document.body.dataset.theme=theme;},[theme]);
   useEffect(()=>{window.scrollTo({top:0,left:0,behavior:'instant'});},[page]);
+  // On inner pages the header slides away while scrolling down and returns on scroll up.
+  useEffect(()=>{
+    const body=document.body;body.classList.remove('nav-hidden');
+    if(page==='index')return;
+    let last=window.scrollY;
+    const onScroll=()=>{
+      const y=window.scrollY;
+      if(y>last&&y>120)body.classList.add('nav-hidden');
+      else if(y<last||y<=120)body.classList.remove('nav-hidden');
+      last=y;
+    };
+    window.addEventListener('scroll',onScroll,{passive:true});
+    return ()=>{window.removeEventListener('scroll',onScroll);body.classList.remove('nav-hidden');};
+  },[page]);
   const toggleTheme=()=>setTheme(theme==='dark'?'light':'dark');
   return <>
     <a className="skip" href="#main">Skip to content</a>
